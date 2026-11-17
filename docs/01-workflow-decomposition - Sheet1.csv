@@ -1,0 +1,14 @@
+#,Step,Type,Hidden?
+1,"Capture the submission and normalize fields (casing, spaces, phone format)",Lights-On,Yes
+2,"Reject spam, tests, and fake entries",Lights-On + judgment,Yes
+3,"Detect personal email (Gmail, Yahoo)",Lights-On,No
+4,Look for a work email else move forward with personal,Lights-On,Yes
+5,Check whether the contact already exists in the CRM,Lights-On,Yes
+6,Check whether the company already exists (match by domain),Lights-On,Yes
+7,"Enrich the company (size, industry, location)",Lights-On,No
+8,"Classify: competitor, student, agency, job seeker, or real buyer",Judgment,Yes
+9,Score fit against the ICP,Lights-On,No
+10,"Decide the route: sales, nurture, or disqualify",Judgment,No
+11,Assign an owner (existing account owner beats round-robin),Lights-On + judgment,Yes
+12,Write to HubSpot with source and reason fields,Lights-On,No
+13,Alert the rep with context,Lights-On,No
